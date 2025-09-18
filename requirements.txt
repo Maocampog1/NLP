@@ -3,3 +3,9 @@ transformers
 torch
 accelerate
 huggingface_hub
+streamlit
+transformers
+torch
+accelerate
+huggingface_hub
+groq
