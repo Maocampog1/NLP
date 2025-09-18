@@ -16,7 +16,7 @@ import os
 import streamlit as st
 from groq import Groq
 
-st.set_page_config(page_title="Chat con Memoria — Groq Llama3-8B", page_icon="💬", layout="centered")
+st.set_page_config(page_title="Chat con Memoria — Groq Llama3.3-70B", page_icon="💬", layout="centered")
 
 # ==========================
 # 🎨 Estilos mínimos
@@ -50,12 +50,8 @@ except Exception:
 
 api_key = manual_key or secrets_key
 
-model_name = st.sidebar.selectbox(
-    "Modelo Groq",
-    ["llama3-8b-8192"],
-    index=0,
-    help="Modelo recomendado para chats rápidos."
-)
+# ✅ Modelo actualizado
+model_name = "llama-3.3-70b-versatile"
 
 system_prompt = st.sidebar.text_area(
     "Instrucción del sistema (opcional)",
